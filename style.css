@@ -1,0 +1,180 @@
+:root{
+    --Blue: hsl(246, 80%, 60%);
+    --work: hsl(15, 100%, 70%);
+    --play: hsl(195, 74%, 62%);
+    --study: hsl(348, 100%, 68%);
+    --exercise: hsl(145, 58%, 55%);
+    --social: hsl(264, 64%, 52%);
+    --selfcare: hsl(43, 84%, 65%); 
+    --darkblue: hsl(226, 43%, 10%);
+    --dblue: hsl(236, 51%, 23%);
+    --Desaturated: hsl(235, 45%, 61%);
+    --PaleBlue: hsl(236, 100%, 87%);
+    --Family: "Rubik";
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Family);
+    color: white;
+}
+body{
+    background-color: var(--darkblue);
+}
+/*user card styling*/
+.user{
+    margin: 1em;
+    background-color: var(--dblue);
+    border-radius: 10px;
+    
+}
+.user-profile{
+    padding: 2em;
+    background-color: var(--social);
+    border-radius: 10px;
+    display: flex;
+}
+.image{
+   width:100px;
+   height: 100px;
+   padding: 1em;
+   background-image: url(./assets/image-jeremy.png);
+   border-radius: 50%;
+   background-position: center;
+   background-size: cover;
+   margin-right: 1em;
+}
+.jeremy{
+    font-weight: 300;
+    font-size: small;
+    padding-bottom: 1em;
+}
+span{
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 1em;
+}
+.user-date{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+#p1{
+    color: var(--Desaturated);
+}
+#p1:hover{
+    color: white;
+    cursor: pointer;
+}
+/*work card style*/
+.card{
+    position: relative;
+     margin: 1em;
+}
+.card-icon{
+    position: relative;
+    padding: 3em;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#Work{
+    background-image: url(./assets/icon-work.svg);
+    background-color: var(--work);
+}
+#Play{
+    background-image: url(./assets/icon-play.svg);
+    background-color: var(--play);
+}
+#Study{
+    background-image: url(./assets/icon-study.svg);
+    background-color: var(--study);
+}
+#Exercise{
+    background-image: url(./assets/icon-exercise.svg);
+    background-color: var(--exercise);
+}
+#Social{
+    background-color: var(--social);
+    background-image: url(./assets/icon-social.svg);
+}
+#Self{
+    background-color: var(--selfcare);
+    background-image: url(./assets/icon-self-care.svg);
+}
+.card-info{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    
+    border-radius: 10px;
+    z-index: 1;
+    bottom: 3em;
+    background-color: var(--dblue);
+}
+.work{
+    margin-top: 1em;
+}
+.card-week{
+    text-align: right;
+}
+.week-icon{
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+#w{
+    padding-top: 1em;
+    margin-bottom: 1em;
+    font-size: 16px;
+    font-weight: 400;
+}
+#hours{
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 2em;
+}
+.week-last{
+    color: rgba(255, 255, 255, 0.623);
+}
+/*Responsive*/
+@media screen and (min-width:1200px) {
+    main{
+      
+        display: flex;
+        justify-content: space-around;
+        margin: 10em;
+       
+       
+    }
+    .user{
+      width:20%;
+      margin-bottom: 3.6em;
+    }
+    .user-profile{
+        display: block;
+        height: 60%;
+    }
+    .user-date{
+        display: block;
+        margin-top: 1em;
+    }
+    span{
+        margin-top: 2em;
+        font-size: 20px;
+    }
+    #p1{
+margin: 0.5em;
+width: 30%;
+    }
+  .image{
+      margin-bottom: 2em;
+  }
+  .wrap-card{
+      width: 80%;
+     display: grid;
+  grid-template-columns: auto auto auto;
+     
+  }
+  }
